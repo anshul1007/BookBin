@@ -1,0 +1,12 @@
+C:\Users\Anshul\Desktop\WebApiService\AngularJsClient\bin\AngularJsClient.dll.config
+C:\Users\Anshul\Desktop\WebApiService\AngularJsClient\bin\AngularJsClient.dll
+C:\Users\Anshul\Desktop\WebApiService\AngularJsClient\bin\AngularJsClient.pdb
+C:\Users\Anshul\Desktop\WebApiService\AngularJsClient\obj\Debug\AngularJsClient.csprojResolveAssemblyReference.cache
+C:\Users\Anshul\Desktop\WebApiService\AngularJsClient\obj\Debug\AngularJsClient.dll
+C:\Users\Anshul\Desktop\WebApiService\AngularJsClient\obj\Debug\AngularJsClient.pdb
+E:\VS2013\WebApiService\AngularJsClient\bin\AngularJsClient.dll.config
+E:\VS2013\WebApiService\AngularJsClient\bin\AngularJsClient.dll
+E:\VS2013\WebApiService\AngularJsClient\bin\AngularJsClient.pdb
+E:\VS2013\WebApiService\AngularJsClient\obj\Debug\AngularJsClient.csprojResolveAssemblyReference.cache
+E:\VS2013\WebApiService\AngularJsClient\obj\Debug\AngularJsClient.dll
+E:\VS2013\WebApiService\AngularJsClient\obj\Debug\AngularJsClient.pdb

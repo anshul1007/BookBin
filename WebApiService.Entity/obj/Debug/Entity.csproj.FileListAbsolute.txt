@@ -1,0 +1,5 @@
+E:\VS2013\WebApiService\Entity\bin\Debug\Entity.dll
+E:\VS2013\WebApiService\Entity\bin\Debug\Entity.pdb
+E:\VS2013\WebApiService\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\VS2013\WebApiService\Entity\obj\Debug\Entity.dll
+E:\VS2013\WebApiService\Entity\obj\Debug\Entity.pdb
