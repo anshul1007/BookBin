@@ -13,6 +13,7 @@
             when('/home', { templateUrl: 'view/home.html' }).
             when('/about', { templateUrl: 'view/about.html' }).
             when('/contact', { templateUrl: 'view/contact.html' }).
+            when('/MyBooks', { templateUrl: 'view/book/home.html', controller: "MyBooks" }).
             otherwise({ redirectTo: '/home' });
 
         // Use x-www-form-urlencoded Content-Type
