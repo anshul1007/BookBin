@@ -10,3 +10,15 @@ E:\VS2013\WebApiService\WebApiService.DAL\bin\Debug\EntityFramework.xml
 E:\VS2013\WebApiService\WebApiService.DAL\bin\Debug\EntityFramework.SqlServer.xml
 E:\VS2013\WebApiService\WebApiService.DAL\obj\Debug\WebApiService.DAL.dll
 E:\VS2013\WebApiService\WebApiService.DAL\obj\Debug\WebApiService.DAL.pdb
+E:\VS2013\BookBin\WebApiService.DAL\bin\Debug\WebApiService.DAL.dll.config
+E:\VS2013\BookBin\WebApiService.DAL\bin\Debug\WebApiService.DAL.dll
+E:\VS2013\BookBin\WebApiService.DAL\bin\Debug\WebApiService.DAL.pdb
+E:\VS2013\BookBin\WebApiService.DAL\bin\Debug\EntityFramework.dll
+E:\VS2013\BookBin\WebApiService.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\VS2013\BookBin\WebApiService.DAL\bin\Debug\WebApiService.Entity.dll
+E:\VS2013\BookBin\WebApiService.DAL\bin\Debug\WebApiService.Entity.pdb
+E:\VS2013\BookBin\WebApiService.DAL\bin\Debug\EntityFramework.xml
+E:\VS2013\BookBin\WebApiService.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\VS2013\BookBin\WebApiService.DAL\obj\Debug\WebApiService.DAL.csprojResolveAssemblyReference.cache
+E:\VS2013\BookBin\WebApiService.DAL\obj\Debug\WebApiService.DAL.dll
+E:\VS2013\BookBin\WebApiService.DAL\obj\Debug\WebApiService.DAL.pdb

@@ -5,16 +5,6 @@
     <title>BookBin</title>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
-    <script src="scripts/jquery-2.1.1.min.js"></script>
-    <script src="scripts/global.js"></script>
-    <script src="scripts/angular.min.js"></script>
-    <script src="scripts/angular-ui/ui-bootstrap.min.js"></script>
-    <script src="scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
-    <script src="scripts/angular-route.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/Service/userAccountService.js"></script>
-    <script src="scripts/Controller/userAccountController.js"></script>
     <style type="text/css">
         .nav, .pagination, .carousel, .panel-title a {
             cursor: pointer;
@@ -121,9 +111,23 @@
         </div>
     </div>
     <!-- Login popup end -->
-    <script type="text/javascript">
-
-    </script>
     <!--<form id="__AjaxAntiForgeryForm" action="#" method="post">@Html.AntiForgeryToken()</form>-->
+    <!-- Master JS files -->
+    <script src="scripts/jquery-2.1.1.min.js"></script>
+    <script src="scripts/modernizr-2.7.2.js"></script>
+    <script src="scripts/notify.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-ui/ui-bootstrap.min.js"></script>
+    <script src="scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <!-- Project Specify non angular files -->
+    <script src="scripts/Common/global.js"></script>
+    <script src="scripts/Common/localStorage.js"></script>
+    <!-- Project Specify Angular files -->
+    <script src="scripts/Common/app.js"></script>
+    <script src="scripts/Service/userAccountService.js"></script>
+    <script src="scripts/Controller/userAccountController.js"></script>
+    <script src="scripts/Controller/myBooksController.js"></script>
 </body>
 </html>

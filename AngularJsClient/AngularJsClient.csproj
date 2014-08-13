@@ -89,7 +89,8 @@
     <Content Include="scripts\angular.min.js.map" />
     <Content Include="scripts\angular-route.min.js.map" />
     <None Include="scripts\jquery-2.1.1.intellisense.js" />
-    <Content Include="scripts\Controller\HomeController.js" />
+    <Content Include="scripts\Controller\homeController.js" />
+    <Content Include="scripts\Controller\myBooksController.js" />
     <Content Include="scripts\Controller\userAccountController.js" />
     <Content Include="scripts\global.js" />
     <Content Include="scripts\jquery-2.1.1.js" />
@@ -103,10 +104,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="scripts\modernizr-2.7.2.js" />
+    <Content Include="scripts\notify.js" />
+    <Content Include="scripts\notify.min.js" />
+    <Content Include="scripts\script.min.js" />
     <Content Include="scripts\Service\userAccountService.js" />
     <Content Include="userAccountService.js" />
     <Content Include="UserControl\Login.html" />
     <Content Include="View\About.html" />
+    <Content Include="View\Book\Add.html" />
+    <Content Include="View\Book\Home.html" />
     <Content Include="View\Contact.html" />
     <Content Include="View\Home.html" />
     <Content Include="Web.config">

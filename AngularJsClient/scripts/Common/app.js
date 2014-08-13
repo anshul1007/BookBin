@@ -13,7 +13,31 @@
             when('/home', { templateUrl: 'view/home.html' }).
             when('/about', { templateUrl: 'view/about.html' }).
             when('/contact', { templateUrl: 'view/contact.html' }).
-            when('/MyBooks', { templateUrl: 'view/book/home.html', controller: "MyBooks" }).
+            when('/MyBooks', {
+                templateUrl: 'view/book/home.html',
+                controller: 'myBooksController'
+                //resolve: {
+                //    load: function ($q, $route, $rootScope) {
+
+                //        var deferred = $q.defer();
+
+                //        var dependencies = [
+                //          'scripts/Controller/myBooksController.js'
+                //        ];
+
+                //        $script(dependencies, function () {
+                //            $rootScope.$apply(function () {
+                //                deferred.resolve();
+                //            });
+                //        });
+
+                //        return deferred.promise;
+                //    }
+                //}
+            }).
+            when('/MyBooks/Add', {
+                templateUrl: 'view/book/Add.html', controller: 'myBooksController'
+            }).
             otherwise({ redirectTo: '/home' });
 
         // Use x-www-form-urlencoded Content-Type

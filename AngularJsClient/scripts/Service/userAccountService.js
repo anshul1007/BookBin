@@ -13,7 +13,7 @@
             getHeaders: getHeaders
         };
 
-        var serverBaseUrl = "http://localhost";
+        var serverBaseUrl = BookBin.serverBaseUrl;
         
         return service;
 
