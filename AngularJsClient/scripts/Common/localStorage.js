@@ -1,12 +1,8 @@
 ﻿$(document).ready(function () {
-    var Books = [{
-        BookID: 1,
-        Name: "B1"
-    },
-       {
-           BookID: 2,
-           Name: "B2"
-       }]
+    var Books = [];
+    Books.push(new Book(1, 'B1', 'A1', BookType.Sell));
+    Books.push(new Book(2, 'B2', 'A2', BookType.Sell));
+
     LocalStorage.SetJSONData(BookBin.LS_MyBook, Books);
 });
 
@@ -49,6 +45,3 @@ var LocalStorage = {
         }
     }
 }
-
-
-

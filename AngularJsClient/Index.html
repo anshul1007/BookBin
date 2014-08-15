@@ -13,6 +13,16 @@
         body {
             padding-top: 60px;
         }
+
+        input.ng-invalid {
+            border: 1px solid red;
+        }
+
+
+        input.ng-valid {
+            border: 1px solid green;
+        }
+
     </style>
 </head>
 <body ng-app="app">
@@ -129,5 +139,8 @@
     <script src="scripts/Service/userAccountService.js"></script>
     <script src="scripts/Controller/userAccountController.js"></script>
     <script src="scripts/Controller/myBooksController.js"></script>
+
+    <script src="../../scripts/Entity/entity.js"></script>
+    <script src="../../scripts/Entity/book.js"></script>
 </body>
 </html>
