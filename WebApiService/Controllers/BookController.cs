@@ -8,6 +8,7 @@ namespace WebApiService.Controllers
     public class BookController : ApiController
     {
         // GET api/book
+        [Authorize]
         public IQueryable<Book> Get()
         {
             return Core.GetBooks();

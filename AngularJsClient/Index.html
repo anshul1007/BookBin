@@ -14,12 +14,11 @@
             padding-top: 60px;
         }
 
-        input.ng-invalid {
+        input.ng-invalid, textarea.ng-invalid {
             border: 1px solid red;
         }
 
-
-        input.ng-valid {
+        input.ng-valid, textarea.ng-valid {
             border: 1px solid green;
         }
 
@@ -133,10 +132,11 @@
     <script src="scripts/angular-route.min.js"></script>
     <!-- Project Specify non angular files -->
     <script src="scripts/Common/global.js"></script>
-    <script src="scripts/Common/localStorage.js"></script>
+    <script src="scripts/Common/storage.js"></script>
     <!-- Project Specify Angular files -->
     <script src="scripts/Common/app.js"></script>
     <script src="scripts/Service/userAccountService.js"></script>
+    <script src="scripts/Service/bookService.js"></script>
     <script src="scripts/Controller/userAccountController.js"></script>
     <script src="scripts/Controller/myBooksController.js"></script>
 

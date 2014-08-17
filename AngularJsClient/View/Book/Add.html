@@ -1,25 +1,58 @@
-﻿<div class="col-lg-8">
-    <form class="form-horizontal" name="newBook" role="form" novalidate>
-        <div class="form-group">
-            <label for="inputBookName" class="col-sm-2 control-label">Book Name</label>
-            <div class="col-sm-10">
+﻿<div class="col-sm-12">
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#/MyBooks">My Books</a></li>
+        <li class="active">Add Book</li>
+    </ol>
+
+    <form class="form-horizontal container-fluid" name="newBook" role="form" novalidate>
+        <div class="form-group col-sm-6 col-sm-push-6">
+            <label for="inputAuthor" class="col-sm-3 control-label">Author</label>
+            <div class="col-sm-9">
+                <input type="text" name="Author" class="form-control" id="inputAuthor" ng-model="Book.Author" placeholder="Author" required>
+            </div>
+        </div>
+        <div class="form-group col-sm-6 col-sm-pull-6">
+            <label for="inputBookName" class="col-sm-3 control-label">Book Name</label>
+            <div class="col-sm-9">
                 <input type="text" name="Name" class="form-control" id="inputBookName" ng-model="Book.Name" placeholder="Book Name" required>
             </div>
         </div>
-        <div class="form-group">
-            <label for="inputAuthor" class="col-sm-2 control-label">Author</label>
-            <div class="col-sm-10">
-                <input type="text" name="author" class="form-control" id="inputAuthor" ng-model="Book.Author" placeholder="Author" required>
+        <div class="form-group col-sm-6 col-sm-push-6">
+            <label for="inputRemark" class="col-sm-3 control-label">
+                Remark
+                <span class="help-block">Book condition, published year, edition and other book specific info.</span>
+            </label>
+            <div class="col-sm-9">
+                <textarea name="Remark" class="form-control" rows="6" id="inputRemark" ng-model="Book.Remark" placeholder="Remark" required></textarea>
             </div>
         </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <div id="error" class="alert alert-danger" style="display:none" role="alert">
+        <div class="form-group col-sm-6 col-sm-pull-6">
+            <label for="inputISBN" class="col-sm-3 control-label">ISBN</label>
+            <div class="col-sm-9">
+                <input type="text" name="ISBN" class="form-control" id="inputISBN" ng-model="Book.ISBN" placeholder="ISBN">
+            </div>
+        </div>
+        <div class="form-group col-sm-6 col-sm-pull-6">
+            <label for="inputBookPrice" class="col-sm-3 control-label">Book Price</label>
+            <div class="col-sm-9">
+                <input type="number" name="BookPrice" class="form-control" id="inputBookPrice" ng-model="Book.BookPrice" placeholder="Book Price" required>
+            </div>
+        </div>
+        <div class="form-group col-sm-6 col-sm-pull-6">
+            <label for="inputOfferPrice" class="col-sm-3 control-label">Offer Price</label>
+            <div class="col-sm-9">
+                <input type="number" name="OfferPrice" class="form-control" id="inputOfferPrice" ng-model="Book.OfferPrice" placeholder="Offer Price" required>
+            </div>
+        </div>
+        <div class="form-group col-sm-12">
+            <div>
+                <div id="error" class="alert alert-danger hidden" role="alert">
                 </div>
             </div>
         </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
+        <div class="form-group col-sm-12">
+            <div>
                 <button type="submit" class="btn btn-primary" ng-click="AddBook(newBook);">Add Book</button>
                 <button type="button" class="btn btn-primary" ng-click="Cancel();">Cancel</button>
             </div>

@@ -46,10 +46,10 @@ namespace WebApiService.DAL
                 .OrderByDescending(x => x.BookID);
         }
 
-        public static IQueryable<Book> GetBooks(Category category, int userID)
+        public static IQueryable<Book> GetBooks(Category category, string userID)
         {
             return _DALDbContext.Book
-                .Where(x => x.Category == category && x.UserID == userID && x.IsDeleted == false)
+                .Where(x => x.Category == category && x.UserID.Equals(userID) && x.IsDeleted == false)
                 .OrderByDescending(x => x.BookID);
         }
 

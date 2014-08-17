@@ -20,5 +20,3 @@ E:\VS2013\BookBin\WebApiService.Business\bin\Debug\EntityFramework.xml
 E:\VS2013\BookBin\WebApiService.Business\obj\Debug\WebApiService.Business.csprojResolveAssemblyReference.cache
 E:\VS2013\BookBin\WebApiService.Business\obj\Debug\WebApiService.Business.dll
 E:\VS2013\BookBin\WebApiService.Business\obj\Debug\WebApiService.Business.pdb
-E:\VS2013\BookBin\WebApiService.Business\bin\Debug\WebApiService.Business.dll.CodeAnalysisLog.xml
-E:\VS2013\BookBin\WebApiService.Business\bin\Debug\WebApiService.Business.dll.lastcodeanalysissucceeded

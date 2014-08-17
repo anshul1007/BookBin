@@ -7,3 +7,4 @@ E:\VS2013\BookBin\WebApiService.Entity\bin\Debug\WebApiService.Entity.dll
 E:\VS2013\BookBin\WebApiService.Entity\bin\Debug\WebApiService.Entity.pdb
 E:\VS2013\BookBin\WebApiService.Entity\obj\Debug\WebApiService.Entity.dll
 E:\VS2013\BookBin\WebApiService.Entity\obj\Debug\WebApiService.Entity.pdb
+E:\VS2013\BookBin\WebApiService.Entity\obj\Debug\WebApiService.Entity.csprojResolveAssemblyReference.cache

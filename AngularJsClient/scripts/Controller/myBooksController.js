@@ -1,17 +1,34 @@
-﻿
-(function () {
+﻿(function () {
     'use strict';
 
-    angular.module('app').controller("myBooksController", ["$scope", "$location", function ($scope, $location, $rootScope, $routeProvider) {
+    angular.module('app').controller("myBooksController", ["$scope", "$location", 'bookService', function ($scope, $location, bookService, $rootScope, $routeProvider) {
 
         $scope.Books = [];
 
         $scope.Book = new Book(-1, '', '', BookType.Sell);
 
-        $scope.Books = LocalStorage.GetJSONData(BookBin.LS_MyBook);
+        $scope.Books = [];
 
         $scope.Cancel = function () {
             $location.path("/MyBooks");
+        };
+
+        function GetMyBooks() {
+            if (!SessionStorage.IsExist(BookBin.Key_MyBook)) {
+                bookService.getMyBooks().then(function (data) {
+                    var books = [];
+                    angular.forEach(data, function (book) {
+                        books.push((new Book(book.BookID, book.Name, book.Author, book.Category, book.ISBN, book.BookPrice, book.OfferPrice, book.Remark)));
+                    });
+                    SessionStorage.SetJSONData(BookBin.Key_MyBook, books);
+                    $scope.Books = books;
+                }, function (error, status) {
+                    console.log(status);
+                });
+            }
+            else {
+                $scope.Books = SessionStorage.GetJSONData(BookBin.Key_MyBook);
+            }
         }
 
         $scope.AddBook = function (newBook) {
@@ -19,20 +36,20 @@
                 // Copy this feed instance and reset the URL in the form
                 $scope.Book.BookID = $scope.Books.length + 1;
                 $scope.Books.push($scope.Book);
-                LocalStorage.SetJSONData(BookBin.LS_MyBook, $scope.Books);
+                //LocalStorage.SetJSONData(BookBin.LS_MyBook, $scope.Books);
                 $.notify("Book added successfully.", { className: "success", globalPosition: "bottom right" });
                 $location.path("/MyBooks");
             }
             else {
-                var errors = [];
-                $(".ng-invalid-required").each(function () {
-                    if (typeof ($(this).attr("placeholder")) !== 'undefined') {
-                        errors.push("<strong>" + $(this).attr("placeholder") + "</strong>: Required")
-                    }
-                });
-                $("#error").html(errors.join("<br/>")).show();
+                BookBin.ValidateForm();
             }
+        };
+
+        $scope.init = function () {
+            GetMyBooks();
         }
+
+        $scope.init();
+
     }]);
 })();
-

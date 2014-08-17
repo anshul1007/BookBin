@@ -108,8 +108,6 @@ E:\VS2013\WebApiService\WebApiService\bin\zh-Hant\Microsoft.Spatial.resources.dl
 E:\VS2013\BookBin\WebApiService\bin\WebApiService.dll.config
 E:\VS2013\BookBin\WebApiService\bin\WebApiService.dll
 E:\VS2013\BookBin\WebApiService\bin\WebApiService.pdb
-E:\VS2013\BookBin\WebApiService\bin\WebApiService.dll.CodeAnalysisLog.xml
-E:\VS2013\BookBin\WebApiService\bin\WebApiService.dll.lastcodeanalysissucceeded
 E:\VS2013\BookBin\WebApiService\bin\Antlr3.Runtime.dll
 E:\VS2013\BookBin\WebApiService\bin\EntityFramework.dll
 E:\VS2013\BookBin\WebApiService\bin\EntityFramework.SqlServer.dll

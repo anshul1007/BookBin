@@ -15,3 +15,4 @@ E:\VS2013\BookBin\AngularJsClient\bin\AngularJsClient.dll
 E:\VS2013\BookBin\AngularJsClient\bin\AngularJsClient.pdb
 E:\VS2013\BookBin\AngularJsClient\obj\Debug\AngularJsClient.dll
 E:\VS2013\BookBin\AngularJsClient\obj\Debug\AngularJsClient.pdb
+E:\VS2013\BookBin\AngularJsClient\obj\Debug\AngularJsClient.csprojResolveAssemblyReference.cache

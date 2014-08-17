@@ -12,7 +12,7 @@ namespace WebApiService.Entity
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int BookID { get; set; }
 
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
         [Required]
         [MaxLength(250)]
@@ -23,22 +23,15 @@ namespace WebApiService.Entity
 
         public Category Category { get; set; }
 
-        [MaxLength(250)]
-        public string Publication { get; set; }
-
         [MaxLength(50)]
         public string ISBN { get; set; }
 
-        public Int16? Edition { get; set; }
+        public double? BookPrice { get; set; }
 
-        public Int16? PublishedYear { get; set; }
-
-        public double? MaxPrice { get; set; }
-
-        public double? Price { get; set; }
+        public double? OfferPrice { get; set; }
 
         [MaxLength(4000)]
-        public string Remarks { get; set; }
+        public string Remark { get; set; }
 
         //public DateTimeOffset RegistrationDate { get; set; }
 
