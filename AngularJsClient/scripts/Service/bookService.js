@@ -16,13 +16,12 @@
         function getMyBooks() {
 
             var getMyBooksUrl = serverBaseUrl + "/api/book";
-
             var deferred = $q.defer();
             $http({
                 method: 'GET',
                 url: getMyBooksUrl,
+                headers: BookBin.GetHeaders(),
             }).success(function (data, status, headers, cfg) {
-                console.log(data);
                 deferred.resolve(data);
             }).error(function (err, status) {
                 console.log(err);

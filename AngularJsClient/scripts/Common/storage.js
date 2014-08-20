@@ -8,7 +8,7 @@
     },
 
     RemoveData: function (key) {
-        localStorage[key] = null;
+        localStorage.removeItem(key);
     },
 
     SetData: function (key, data) {
@@ -56,7 +56,7 @@ var SessionStorage = {
     },
 
     RemoveData: function (key) {
-        sessionStorage[key] = null;
+        sessionStorage.removeItem(key);
     },
 
     SetData: function (key, data) {

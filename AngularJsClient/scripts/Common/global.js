@@ -4,6 +4,7 @@
         $.notify("Sorry, we don't support your browser. Please try latest browser.", { className: "error", globalPosition: "top right" });
     },
     Key_MyBook: "MyBook",
+    Key_AccessToken: "access_token",
     ValidateForm: function () {
         var errors = [];
         $("input.ng-invalid").each(function () {
@@ -23,6 +24,11 @@
         }
         else {
             $("#error").removeClass("show").addClass("hidden");
+        }
+    },
+    GetHeaders: function () {
+        if (LocalStorage.IsExist(BookBin.Key_AccessToken)) {
+            return { "Authorization": "Bearer " + LocalStorage.GetJSONData(BookBin.Key_AccessToken) };
         }
     }
 }

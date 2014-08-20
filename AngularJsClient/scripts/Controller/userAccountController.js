@@ -16,6 +16,7 @@
                 if (typeof $scope.userData.userName !== "undefined" && $.trim($scope.userData.userName) !== "" && $.trim($scope.userData.password) !== "") {
                     userAccountService.loginUser($scope.userData).then(function (data) {
                         $scope.isLoggedIn = true;
+                        LocalStorage.SetJSONData(BookBin.Key_AccessToken, data.access_token);
                         $scope.bearerToken = data.access_token;
                         $("#spanUserName").text(data.userName);
                         ChangeAccountLink();
